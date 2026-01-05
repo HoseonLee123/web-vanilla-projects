@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: beige;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    height: 100vh;
+}
+
+table {
+    display: block;
+    border-collapse: collapse;
+    background-color: var(--main-color);
+    height: 300px;
+    overflow: auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    line-height: 1.5;
+}
+
+th {
+    width: 150px;
+    font-size: 30px;
+}
+
+td {
+    font-size: 25px;
+    text-align: center;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--main-color);
+}
